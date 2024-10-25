@@ -2,3 +2,7 @@ name: BetaHunger
 version: '${version}'
 main: org.infotoast.betahunger.BetaHunger
 api-version: '1.21'
+prefix: BetaHunger
+authors: [ OreDerp ]
+description: Pre-Beta 1.8 Hunger
+website: infotoast.org
