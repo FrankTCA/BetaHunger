@@ -1,5 +1,6 @@
 package org.infotoast.betahunger;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -14,6 +15,7 @@ public final class BetaHunger extends JavaPlugin {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new BetaHungerListener(), this);
+        Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "gamerule naturalRegeneration false");
         getServer().getConsoleSender().sendMessage("\u00a7bBetaHunger enabled!");
     }
 
